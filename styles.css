@@ -165,11 +165,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: parpadeo 0.7s infinite;
 }
 #imagenlogo {
   display: block;
-  max-height: 50vh;
-  width: 40vw;
 }
 
 #cartavolteada {
@@ -182,8 +181,6 @@ body {
 
 #cartavolteada.active {
   display: block;
-  max-height: 50vh;
-  width: 40vw;
 }
 /*#endregion */
 
@@ -209,6 +206,47 @@ body {
   .imagen {
     max-width: 50%;
     padding: 2rem;
+  }
+  .action-call {
+  margin: 4vh;
+  color: ghostwhite;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imagenlogo {
+  display: block;
+  max-height: 50vh;
+  width: 40vw;
+}
+
+#cartavolteada {
+  display: none;
+}
+
+#imagenlogo.active {
+  display: none;
+}
+
+#cartavolteada.active {
+  display: block;
+  max-height: 50vh;
+  width: 40vw;
+}
+}
+/* #endregion */
+
+/*? #region ANIMACION */
+@keyframes parpadeo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* #endregion */

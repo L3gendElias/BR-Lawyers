@@ -20,7 +20,7 @@ body {
 
 /* * <=============== MENU DE NAVEGACIÓN ==============> */
 
-/*! #region MENU DE NAVEGACION (Celulares) */
+/*TODO #region MENU DE NAVEGACION (MOBILE) */
 .header {
   background-color: #0b2235;
   width: 100vw;
@@ -78,7 +78,7 @@ body {
 }
 /* #endregion */
 
-/*! #region MENU DE NAVEGACION (Tablets) */
+/*TODO #region MENU DE NAVEGACION (TABLET) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .nav {
     flex-direction: row;
@@ -99,7 +99,7 @@ body {
 }
 /* #endregion */
 
-/*! #region MENU DE NAVEGACION (PC) */
+/*TODO #region MENU DE NAVEGACION (PC) */
 @media (min-width: 1200px) {
   .nav {
     flex-direction: row;
@@ -131,7 +131,7 @@ body {
 
 /* * <=============== INICIO ==============> */
 
-/*! #region INICIO (Mobile) */
+/*TODO #region INICIO (MOBILE) */
 .start {
   background: linear-gradient(to bottom, #023859, #052b42);
   width: 100vw;
@@ -175,7 +175,7 @@ body {
 }
 /*#endregion */
 
-/*! #region INICIO (Tablet) */
+/*TODO #region INICIO (TABLET) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .start {
     padding-top: 8vh;
@@ -188,7 +188,7 @@ body {
 }
 /* #endregion */
 
-/*! #region INICIO (PC) */
+/*TODO #region INICIO (PC) */
 @media (min-width: 1200px) {
   .start {
     padding-top: 8vh;
@@ -203,7 +203,7 @@ body {
 
 /* * <=============== HISTORIA ==============> */
 
-/*! #region HISTORIA (Mobile) */
+/*TODO #region HISTORIA (MOBILE) */
 .history {
   display: flex;
   flex-direction: column;
@@ -232,7 +232,7 @@ body {
 }
 /* #endregion */
 
-/*! #region HISTORIA (Tablet) */
+/*TODO #region HISTORIA (TABLET) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .history {
     flex-direction: row;
@@ -267,7 +267,7 @@ body {
 }
 /* #endregion */
 
-/*! #region HISTORIA (PC) */
+/*TODO #region HISTORIA (PC) */
 @media (min-width: 1200px) {
   .history {
     flex-direction: row;
@@ -299,3 +299,17 @@ body {
 /* #endregion */
 
 /* * <=============== SERVICIOS =============> */
+
+/*TODO #region SERVICIOS (MOBILE) */
+
+/* #endregion */
+
+/*TODO #region SERVICIOS (TABLET) */
+
+/* #endregion */
+
+/*TODO #region SERVICIOS (PC) */
+
+/* #endregion */
+
+#REGION

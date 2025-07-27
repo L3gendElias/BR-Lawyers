@@ -6,6 +6,7 @@ const cartavolteada = document.getElementById("cartavolteada");
 
 button.addEventListener("click", () => {
   menudesplegable.classList.toggle("active");
+  button.classList.toggle("rotate");
 });
 
 carta.addEventListener("click", () => {

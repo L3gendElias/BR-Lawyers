@@ -26,6 +26,7 @@ body {
   width: 100vw;
   position: fixed;
   z-index: 1000;
+  border-radius: 10px;
 }
 
 .nav {
@@ -75,6 +76,11 @@ body {
   width: 80%;
   background-color: #dbdbdb;
   margin: 0 auto;
+}
+.responsive-button.rotate {
+  animation-name: rotating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 /* #endregion */
 
@@ -129,6 +135,20 @@ body {
 }
 /* #endregion */
 
+/*? #region ANIMACIÓN */
+@keyframes rotating {
+  0% {
+    transform: rotate(91deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(91deg);
+  }
+}
+/* #endregion */
+
 /* * <=============== INICIO ==============> */
 
 /*TODO #region INICIO (MOBILE) */
@@ -144,7 +164,7 @@ body {
 }
 
 .imagen {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   border-radius: 10px;
   max-width: 90%;
@@ -165,6 +185,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.action-call i {
   animation: parpadeo 0.7s infinite;
 }
 #imagenlogo {
@@ -351,7 +373,99 @@ body {
 /* * <=============== SERVICIOS =============> */
 
 /*TODO #region SERVICIOS (MOBILE) */
-
+.services {
+  background-color: #fff;
+  height: 200vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.services .dark-boxes-container {
+  display: flex;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0vh;
+  padding: 0;
+}
+.services .dark-boxes-container .service-box {
+  background-color: #0b2235;
+  width: 80vw;
+  height: 28vh;
+  margin-top: 5vh ;
+  padding: 5vh 8vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.services .dark-boxes-container .service-box .servicio-title {
+  color: rgb(232, 232, 232);
+  font-size: 2.3em;
+  margin-bottom: 4vh;
+  font-family: monospace;
+}
+.services .dark-boxes-container .service-box ul {
+  color: rgb(209, 209, 209);
+  list-style: square;
+  align-self: flex-start;
+  margin-left: 8vw;
+}
+.services .dark-boxes-container #title-box {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+.services .light-boxes-container {
+  display: flex;
+  background-color: #0b2235;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0vh;
+  padding: 0;
+}
+.services .light-boxes-container .service-box {
+  background-color: #ffffff;
+  width: 80vw;
+  height: 28vh;
+  margin-top: 5vh ;
+  padding: 5vh 8vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.services .light-boxes-container .service-box .servicio-title {
+  color: rgb(0, 0, 0);
+  font-size: 2.3em;
+  margin-bottom: 4vh;
+  font-family: monospace;
+}
+.services .light-boxes-container .service-box ul {
+  color: rgb(32, 32, 32);
+  list-style: square;
+  align-self: flex-start;
+  margin-left: 8vw;
+}
+.services .light-boxes-container .service-box #special-title {
+  font-size: 2.2em;
+}
 /* #endregion */
 
 /*TODO #region SERVICIOS (TABLET) */

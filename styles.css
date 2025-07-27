@@ -129,7 +129,6 @@ body {
 }
 /* #endregion */
 
-
 /* * <=============== INICIO ==============> */
 
 /*! #region INICIO (Mobile) */
@@ -145,17 +144,34 @@ body {
 }
 
 .imagen {
-  background-color: ghostwhite;
+  background-color: rgb(228, 228, 228);
   padding: 1rem;
   border-radius: 10px;
   max-width: 90%;
+  cursor: pointer;
 }
 
 .imagen img {
   max-width: 100%;
   height: auto;
+  background-color: #fff;
   display: block;
   border-radius: 5px;
+}
+#imagenlogo {
+  display: block;
+}
+
+#cartavolteada {
+  display: none;
+}
+
+#imagenlogo.active {
+  display: none;
+}
+
+#cartavolteada.active {
+  display: block;
 }
 /*#endregion */
 
@@ -213,19 +229,6 @@ body {
   text-align: justify;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-}
-
-.history .imagen {
-  background-color: white;
-  padding: 0.5rem;
-  border: 2px solid #0b2235;
-  max-width: 90%;
-}
-
-.history .imagen img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 /* #endregion */
 
@@ -296,4 +299,3 @@ body {
 /* #endregion */
 
 /* * <=============== SERVICIOS =============> */
-

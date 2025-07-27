@@ -1,0 +1,299 @@
+/*? #region DATOS BÁSICOS DE CSS */
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* #endregion */
+
+/* * <=============== MENU DE NAVEGACIÓN ==============> */
+
+/*! #region MENU DE NAVEGACION (Celulares) */
+.header {
+  background-color: #0b2235;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.responsive-button {
+  background-color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.nav--list {
+  display: none;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav--list.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  width: 100%;
+  padding: 0.8rem 0;
+}
+
+.nav__link {
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.5rem;
+}
+
+.linea {
+  height: 1px;
+  width: 80%;
+  background-color: #dbdbdb;
+  margin: 0 auto;
+}
+/* #endregion */
+
+/*! #region MENU DE NAVEGACION (Tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .responsive-button {
+    display: none;
+  }
+  .nav--list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .linea {
+    display: none !important;
+  }
+}
+/* #endregion */
+
+/*! #region MENU DE NAVEGACION (PC) */
+@media (min-width: 1200px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .responsive-button {
+    display: none;
+  }
+  .nav--list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .linea {
+    display: none !important;
+  }
+  .nav__link {
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+  }
+  .nav__link:hover {
+    background-color: #fff;
+    color: #0b2235;
+  }
+}
+/* #endregion */
+
+
+/* * <=============== INICIO ==============> */
+
+/*! #region INICIO (Mobile) */
+.start {
+  background: linear-gradient(to bottom, #023859, #052b42);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen {
+  background-color: ghostwhite;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+/*#endregion */
+
+/*! #region INICIO (Tablet) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .start {
+    padding-top: 8vh;
+  }
+
+  .imagen {
+    max-width: 70%;
+    padding: 1.5rem;
+  }
+}
+/* #endregion */
+
+/*! #region INICIO (PC) */
+@media (min-width: 1200px) {
+  .start {
+    padding-top: 8vh;
+  }
+
+  .imagen {
+    max-width: 50%;
+    padding: 2rem;
+  }
+}
+/* #endregion */
+
+/* * <=============== HISTORIA ==============> */
+
+/*! #region HISTORIA (Mobile) */
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 8vw;
+  background: linear-gradient(to right, #f2f2f2, #dddddd);
+  min-height: 80vh;
+}
+
+.contenido-texto {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #0b2235;
+}
+
+.texto {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.history .imagen {
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid #0b2235;
+  max-width: 90%;
+}
+
+.history .imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* #endregion */
+
+/*! #region HISTORIA (Tablet) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .history {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6vh 5vw;
+    min-height: 60vh;
+  }
+
+  .contenido-texto {
+    width: 50%;
+    text-align: left;
+    padding-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 3px solid #0b2235;
+    padding-bottom: 1rem;
+  }
+
+  .texto {
+    font-size: 1.1rem;
+  }
+
+  .history .imagen {
+    width: 40%;
+    max-width: 400px;
+  }
+}
+/* #endregion */
+
+/*! #region HISTORIA (PC) */
+@media (min-width: 1200px) {
+  .history {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 10vw;
+    min-height: 50vh;
+  }
+
+  .contenido-texto {
+    width: 50%;
+    padding-right: 5rem;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .texto {
+    font-size: 1.1rem;
+  }
+
+  .history .imagen {
+    width: 30%;
+    max-width: 350px;
+  }
+}
+/* #endregion */
+
+/* * <=============== SERVICIOS =============> */
+

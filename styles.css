@@ -22,11 +22,11 @@ body {
 
 /*TODO #region MENU DE NAVEGACION (MOBILE) */
 .header {
-  background-color: #0b2235;
+  background-color: #023859;
   width: 100vw;
   position: fixed;
   z-index: 1000;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .nav {
@@ -498,7 +498,7 @@ body {
 .services .dark-boxes-container .service-box {
   background-color: #0b2235;
   width: 40vw;
-  height: 25vh;
+  height: MAX-content;
   margin-top: 2.5vh ;
   padding: 2.5vh 4vw;
   border-radius: 25px;
@@ -545,7 +545,7 @@ body {
 .services .light-boxes-container .service-box {
   background-color: #fff;
   width: 40vw;
-  height: 25vh;
+  height: max-content;
   margin-top: 2.5vh ;
   padding: 2.5vh 4vw;
   border-radius: 25px;
@@ -574,6 +574,11 @@ body {
 /* #endregion */
 
 /*TODO #region SERVICIOS (PC) */
-
+@media (min-width: 1200px) {
+  .services{
+    background-color: #fff;
+    display: flex;
+  }
+}
 /* #endregion */
 

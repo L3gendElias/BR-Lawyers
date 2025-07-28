@@ -291,6 +291,13 @@ body {
   margin-bottom: 3rem;
   width: 100%;
 }
+.contenido-texto ul, h2{
+  list-style: none;
+  text-align: left;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
 
 .titulo {
   font-size: 1.8rem;

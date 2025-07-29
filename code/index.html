@@ -18,15 +18,15 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul class="nav--list" id="NavList">
-                <li class="list__item"><a href="#start" class="nav__link">INICIO</a></li>
+                <li class="list__item"><a href="#tp1" class="nav__link">INICIO</a></li>
                 <div class="linea"></div>
-                <li class="list__item"><a href="#history" class="nav__link">HISTORIA</a></li>
+                <li class="list__item"><a href="#tp2" class="nav__link">HISTORIA</a></li>
                 <div class="linea"></div>
-                <li class="list__item"><a href="#services" class="nav__link">SERVICIOS</a></li>
+                <li class="list__item"><a href="#tp3" class="nav__link">SERVICIOS</a></li>
                 <div class="linea"></div>
-                <li class="list__item"><a href="#team" class="nav__link">EQUIPO</a></li>
+                <li class="list__item"><a href="#tp4" class="nav__link">EQUIPO</a></li>
                 <div class="linea"></div>
-                <li class="list__item"><a href="#contact" class="nav__link">CONTACTO</a></li>
+                <li class="list__item"><a href="#tp5" class="nav__link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -34,10 +34,11 @@
     <main>
 
         <!--TODO I N I C I O -->
+        <div class="tp" id="tp1"></div>
         <article class="start" id="start">
             <section class="imagen">
-                <img src="/images/logo.png" alt="LOGO Barragán&Rosales" id="imagenlogo" class="img1">
-                <img src="images/cartavolteada.png" alt="Datos de contacto" id="cartavolteada" class="img2">
+                <img src="../images/logo.png" alt="LOGO Barragán&Rosales" id="imagenlogo" class="img1">
+                <img src="../images/cartavolteada.png" alt="Datos de contacto" id="cartavolteada" class="img2">
             </section>
             <section class="action-call">
                 <i class="fa-solid fa-hand-point-up"></i>
@@ -45,6 +46,7 @@
         </article>
 
         <!--TODO H I S T O R I A -->
+        <div class="tp" id="tp2"></div>
         <article class="history" id="history">
 
             <section class="contenido-texto">
@@ -70,11 +72,12 @@
                 </div>
             </section>
             <section class="imagen">
-                <img src="images/bodegon-con-la-balanza-de-la-justicia.jpg" alt="DamaJusticia" loading="lazy">
+                <img src="../images/bodegon-con-la-balanza-de-la-justicia.jpg" alt="DamaJusticia" loading="lazy">
             </section>
         </article>
 
         <!--TODO S E R V I C I O S -->
+        <div class="tp" id="tp3"></div>
         <article class="services" id="services">
             <section class="dark-boxes-container">
 
@@ -149,11 +152,33 @@
         </article>
 
         <!-- TODO E Q U I P O -->
-        
+        <div class="tp" id="tp4"></div>
+        <article class="team" id="team">
+            <h2 class="team-title">EQUIPO</h2>
+            <section class="slider-container">
+                <div class="slider-izquierdo">
+                    <img src="/images/left-arrow.svg" alt="Flecha izquierda">
+                </div>
+                <div class="slider-screen">
+                    <img name="Imagen">
+                </div>
+                <div class="slider-derecho">
+                    <img src="/images/right-arrow.svg" alt="Flecha derecha">
+                </div>
+            </section>
+        </article>
+
+        <!-- TODO C O N T A C T O -->
+        <div class="tp" id="tp5"></div>
+        <article class="contact" id="contact">
+            
+        </article>
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="../JavaScript/menu.js"></script>
+    <script src="../JavaScript/carta.js"></script>
+    <script src="../JavaScript/slider.js"></script>
 </body>
 
 </html>

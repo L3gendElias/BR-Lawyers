@@ -22,7 +22,7 @@ function MoverDerecha() {
 SliderDerecha.addEventListener("click", function(){
     clearInterval(Intervalo);
     MoverDerecha();
-    Intevalo = setInterval(MoverDerecha, 5000);
+    Intervalo = setInterval(MoverDerecha, 5000);
 })
 
 // BOTON IZQUIERDO DEL SLIDER
